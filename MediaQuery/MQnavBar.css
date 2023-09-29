@@ -1,0 +1,58 @@
+@media screen and (max-width:540px)
+{
+    #navBarList li span 
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 0.5px)  {
+ 
+    #hamburger { display: block; }
+
+    #navBar .responsiveImg 
+    {
+        margin: 0em;
+        margin-left: auto;
+    }
+
+    #hamburgerDropDown 
+    {
+        display: none;
+        position: absolute;
+        overflow: visible;
+        left: 0em;
+        z-index: 1;
+    }
+
+    #navBarList li, #groupOnTheRight 
+    {
+        float: none;
+        display: block;
+    }
+
+    #navBarList li a 
+    {
+        text-align: start;
+        padding: 0.5em;
+        width: 11rem;
+    }
+
+    #navBarList li span 
+    {
+        text-align: start;
+        padding: 0.5rem;
+        padding-top: 1rem;
+        width: 11rem;
+    }
+
+    #groupOnTheRight li
+    {
+        float: left;
+    }
+
+    #groupOnTheRight li a:nth-of-type(2), #groupOnTheRight li a:last-of-type
+    {
+        width: auto;
+    }
+}

@@ -1,0 +1,334 @@
+:root 
+{
+    --shortCol:36%;
+    --longCol:60%;
+
+    --locationShortCol:30%;
+    --locationLongCol:70%;
+    --shadow: 5px 10px #888888;
+}
+
+ul 
+{
+    list-style-type: none;
+}
+
+.col1 
+{
+    float: left;
+    width: var(--longCol);
+}
+
+.col2 
+{
+    float: right;
+    width: var(--shortCol);
+}
+
+#introduction 
+{
+    margin-top: 1em;
+}
+
+.content
+{
+    display: flow-root;
+    border: 0.01rem solid black;
+    box-shadow: var(--shadow);
+    border-radius: 1rem;
+    padding: 1em;
+    line-height: 1.5;
+    text-align: start;
+}
+
+.content h3 
+{
+    margin-bottom: 0.5em;
+}
+
+.topicContainer
+{
+    margin: 2em 0;
+    padding: 0 1em;
+    color: black;
+    display: flow-root;
+}
+
+.contentList li:not(.contentList li:last-of-type) 
+{
+    padding-bottom: 1rem;
+}
+
+.skill 
+{
+    display: flow-root;
+}
+
+.skill div img
+{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+    margin-top: 0.1rem;
+}
+
+.skill div:first-of-type 
+{
+    float: left;
+}
+
+.skill div span 
+{
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+#resume 
+{
+    max-height: 50.5rem;
+    overflow: auto;
+}
+
+#promoVideo 
+{
+    margin-top: 1rem;
+    background-color: var(--headerFooterColor);
+    border-radius: 1rem;
+    box-shadow: var(--shadow);
+}
+
+#videoTitle 
+{
+    padding: 0.7rem;
+    color: white;
+}
+
+#videoContainer 
+{
+    border: 0.3rem solid var(--headerFooterColor);
+    border-radius: inherit;
+    padding: 0.5rem;
+    background-color: white;
+}
+
+#videoContainer video 
+{
+    height: auto;
+    border-radius: inherit;
+    background-color: white;
+}
+
+#seeMoreContainer 
+{
+    display: flow-root;
+    font-size: 1rem;
+    color: white;
+    margin-top: 2rem;
+    background-color: var(--headerFooterColor);
+    border-radius: 1rem;
+    box-shadow: var(--shadow);
+}
+
+#seeMore 
+{
+    display: flow-root;
+    font-size: 1rem;
+    background-color: inherit;
+    border-radius: inherit;
+}
+
+#seeMore h3, #seeMore h4, #seeMore h5 
+{
+    padding: 0.5em;
+}
+
+#sessionLink 
+{
+    background-color: var(--headerFooterColor);
+    padding-top: 0.5rem;
+}
+
+#sessionLink img
+{
+    background-color: inherit;
+    width: 3rem;
+    height: 3rem;
+    display: block;
+    margin: 0 auto;
+}
+
+#instagramLink 
+{
+    margin: 1.5rem 0;
+}
+
+#instagramLink a img
+{
+    width: 3rem;
+    height: 3rem;
+}
+
+#locations .gyms:first-of-type 
+{
+    margin-top: 0em;
+}
+
+#locations .layer 
+{
+    background-repeat: round;
+    background-image: 
+    url("https://www.chapmantaylor.com/uploads/ChapmanTaylor-FitnessFirst-ICONSIAM-67.jpg");
+}
+
+#locations .topicContainer 
+{
+    color: white;
+    text-shadow: 5px 5px 5px black;
+}
+
+.gyms 
+{
+    text-align: start;
+    margin-top: 1rem;
+    display: flow-root;
+}
+
+.address 
+{
+    border-radius: 1rem;
+    background-color: rgba(215,9,38,.25);
+    padding: 0.5rem;
+}
+
+.address p 
+{
+    line-height: 1.5;
+}
+
+.map 
+{
+    border-radius: 1rem;
+}
+
+.locationCol1 
+{
+    float: left;
+    margin-top: 0.5rem;
+    width: var(--locationShortCol);
+}
+
+.locationCol1 h4 
+{
+    margin-bottom: 0.5rem;
+}
+
+.locationCol2
+{
+    float: right;
+    width: var(--locationLongCol);
+}
+
+
+/*SOCIAL MEDIA*/
+#socialMedia 
+{
+    display: none;
+}
+
+#socialMedia .content 
+{
+    padding: 0em;
+    border: none;
+}
+
+#socialMedia .layer .layerTitle p 
+{
+    line-height: 1.6;
+    padding: 0.5rem;
+}
+
+#socialMediaLinks 
+{
+    display: flow-root;
+    margin: 0 auto;
+    max-width: 65%;
+}
+
+#socialMediaLinks div:first-of-type
+{
+    float: left;
+}
+
+#socialMediaLinks div:last-of-type
+{
+    float: right;
+}
+
+/*MEDIA QUERY*/
+@media screen and (max-width:960.5px) 
+{
+
+    #seeMoreContainer 
+    {
+        float: left;
+        width: var(--longCol);
+    }
+}
+
+@media screen and (max-width:600.5px) 
+{
+    #locations .layer 
+    {
+        background-image: none;
+    }
+    .col1, .col2, .map, .address, #seeMoreContainer 
+    {
+        float: none;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .map, .contentList  
+    {
+        margin-top: 1rem;
+    }
+
+    .topicContainer 
+    {
+        padding: 0 0.5rem;
+        margin: 1rem 0;
+    }
+
+    .locationCol1 
+    {
+        margin-top: 1.5rem;
+    }
+
+    #locations .topicContainer 
+    {
+        color: black;
+        font-weight: normal;
+        text-shadow: none;
+        padding: 0rem;
+    }
+
+    .gyms 
+    {
+        padding: 0 0.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid black;
+    }
+
+    .gyms:last-of-type 
+    {
+        border-bottom: none;
+        padding-bottom: 0rem;
+    }
+
+    .address 
+    {
+        background-color: rgba(0,0,0,0.1);
+        margin-top: 0em;
+    }
+
+}

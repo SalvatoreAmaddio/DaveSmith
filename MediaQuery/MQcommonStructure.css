@@ -1,0 +1,52 @@
+@media screen and (max-width:500.5px) 
+{
+    #headerPanel section 
+    {
+        padding: 1em;
+    }
+
+    .layerTitle 
+    {
+        padding: 0.5em;
+    }
+}
+
+@media screen and (max-width:442.5px) 
+{
+    html 
+    {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:383.5px) 
+{
+    html 
+    {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:354px) 
+{
+    html 
+    {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:324.5px) 
+{
+    html 
+    {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:295.5px) 
+{
+    html 
+    {
+        font-size: 11px;
+    }
+}
